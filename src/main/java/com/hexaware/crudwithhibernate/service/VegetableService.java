@@ -11,11 +11,11 @@ public class VegetableService {
 	public void vegetableSave() {
 		Vegetable veg = new Vegetable();
 		System.out.println("Enter the details of the Vegetable");
-		
 		System.out.println("Enter the Vegetable name....");
 		veg.setVegName(sc.nextLine());
 		System.out.println("Enter the vegetable price....");
 		veg.setVegPrice(sc.nextLong());
+		vegdao.vegetableSave(veg);
 		
 		
 	}
@@ -40,6 +40,7 @@ public class VegetableService {
 		veg.setVegName(sc.nextLine());
 		System.out.println("Enter the vegetable price....");
 		veg.setVegPrice(sc.nextLong());
+		
 		
 		
 	}
